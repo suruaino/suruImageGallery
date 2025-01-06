@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ee600e9388.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Suru Image Gallery</title>
+</head>
+
+<body>
+    <header class="bg-[#9f9f9f] h-16 px-4 flex justify-between items-center">
+        <div class="logo font-bold">ImgGal</div>
+        <div class="date-box"></div>
+    </header>
+
+    <main class="mb-20">
+        <div class=" w-full px-2 md:px-4">
+            <div
+                class="search-box w-full h-28 md:h-auto md:py-4 mt-6 flex flex-col items-center justify-center gap-2 md:gap-6 border rounded-lg">
+                <h2 class="md:text-3xl text-center font-semibold">A better way of searching your chice of images.</h2>
+                <div class="input-box w-[90%] max-w-[30rem] flex gap-1">
+                    <input id="search-input" type="search" placeholder="Search a keyword"
+                        class="w-[90%] md:w-[80%] h-10 px-2 md:px-4 border rounded-md">
+                    <button class="search-btn w-[10%] md:w-[20%] border rounded-md cursor-pointer hover:border hover:border-blue-600 transition-all active:scale-95"><i
+                            class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="images-box px-2 md:px-4 my-[2rem]"></div>
+
+
+        <div id="pagination" class="w-full text-lg font-medium flex justify-center items-center gap-6">
+            <button id="prevBtn" class="w-[6rem] p-2 rounded-md" disabled>Previous</button>
+            <span id="pageNumber">1</span>
+            <button id="nextBtn" class="w-[6rem] p-2 rounded-md">Next</button>
+        </div>
+
+    </main>
+
+    <!-- <footer class="bg-black text-[#ffffff] w-full h-16 flex flex-col items-center justify-center fixed bottom-0">
+        <small><i class="fa fa-copyright" aria-hidden="true"></i> Copyright &mdash; Suru Emmanuel</small>
+        <code>All Right Reserved</code>
+    </footer> -->
+
+    <footer class="bg-black text-white w-full h-16 flex flex-col items-center justify-center fixed bottom-0">
+        <small aria-label="Copyright">
+            <i class="fa fa-copyright" aria-hidden="true"></i> Copyright &mdash; Suru Emmanuel
+        </small>
+        <code>All Rights Reserved</code>
+    </footer>
+    
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
