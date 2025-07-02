@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 1000);
 
   let currentPage = 1; 
-  const perPage = 9;
+  const perPage = 10;
   let currentQuery = "nature"; 
 
   const loader = document.createElement("div");
